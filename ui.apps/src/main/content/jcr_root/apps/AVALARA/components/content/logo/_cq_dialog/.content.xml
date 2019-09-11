@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Logo Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <pagePath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Path of the page to which logo will point."
+                        fieldLabel="Home Page Path"
+                        name="./pagePath"/>
+                    <logoImage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Select the image for logo."
+                        fieldLabel="Logo Image"
+                        name="./logoImage"
+                        required="{Boolean}true"/>
+                    <altText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Entered text will be displayed when image is unavailable."
+                        fieldLabel="Alt text for image"
+                        name="./altText"
+                        required="{Boolean}true"/>
+                    <logoText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Entered the tag line for logo."
+                        fieldLabel="Logo Text"
+                        name="./logoText"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
