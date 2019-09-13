@@ -3,4 +3,4 @@
     jcr:description="This is the component that are used for logo."
     jcr:primaryType="cq:Component"
     jcr:title="Logo"
-    componentGroup="AVALARA"/>
+    componentGroup="./hidden"/>
