@@ -2,7 +2,7 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2019-09-11T11:22:05.095+05:30"
+        cq:lastModified="{Date}2019-09-13T15:05:18.118+05:30"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/AVALARA/settings/wcm/template-types/empty-page"
         jcr:description="This is the template that is used for the purpose of creating all pages."

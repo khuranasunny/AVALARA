@@ -3,12 +3,22 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2019-09-13T15:05:18.118+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/AVALARA/settings/wcm/templates/landing-page"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="AVALARA/components/structure/page">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <header
+                jcr:created="{Date}2019-09-13T15:05:18.113+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-09-13T15:05:18.113+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="AVALARA/components/structure/header"/>
+        </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone
