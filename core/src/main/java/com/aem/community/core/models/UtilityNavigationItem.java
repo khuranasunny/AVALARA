@@ -15,45 +15,34 @@
  */
 package com.aem.community.core.models;
 
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class LogoModel {
+public class UtilityNavigationItem {
 
 	@Inject
-	@Default(values = "#")
-	private String pagePath;
+	private String linkTitle;
 
 	@Inject
-	private String logoImage;
+	private String linkPath;
 
 	@Inject
-	private String altText;
+	private String openInNewWindow;
 
-	@Inject
-	@Default(values = "")
-	private String logoText;
-
-	public String getPagePath() {
-		return pagePath;
+	public String getLinkTitle() {
+		return linkTitle;
 	}
 
-	public String getLogoImage() {
-		return logoImage;
+	public String getLinkPath() {
+		return linkPath;
 	}
 
-	public String getAltText() {
-		return altText;
-	}
-
-	public String getLogoText() {
-		return logoText;
+	public String getOpenInNewWindow() {
+		return openInNewWindow;
 	}
 
 }
