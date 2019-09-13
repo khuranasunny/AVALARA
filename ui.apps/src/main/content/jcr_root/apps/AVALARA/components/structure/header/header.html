@@ -1,0 +1,78 @@
+<header class="Header__Main fixed-top">
+   <div class="container">
+      <div class="d-flex Header__Main__Wrap">
+         <div class="row">
+           <div data-sly-resource="${ @path='utilityNavigation', resourceType='AVALARA/components/content/utility-navigation' }"></div>
+            <div class="Header__Main__Primary align-items-center">
+              <div data-sly-resource="${ @path='logo', resourceType='AVALARA/components/content/logo' }"></div>
+               <div class="Header__Main__Primary__Navigation">
+                  <ul class="d-flex">
+                     <li data-target-submenu="solutions" onclick="var s_objectID='n:us:Solutions';">Solutions<span class="border" style="width: 67.4844px; left: 213.997px;"></span></li>
+                     <li data-target-submenu="products" onclick="var s_objectID='n:us:Products';">Products<span class="border" style="width: 63.7969px; left: 303.075px;"></span></li>
+                     <li data-target-submenu="partners" onclick="var s_objectID='n:us:Partners';">Partners<span class="border" style="width: 60.2812px; left: 388.466px;"></span></li>
+                     <li data-target-submenu="resources" onclick="var s_objectID='n:us:Resources';">Resources<span class="border" style="width: 71.9531px; left: 470.341px;"></span></li>
+                  </ul>
+               </div>
+               <div class="Header__Main__Secondary__Navigation">
+                  <div class="d-flex align-items-center justify-content-end">
+                     <div class="yui-skin-sam">
+                        <form name="searchform" method="get" action="/us/en/search.html" class="Header__Main__Secondary__Navigation__Search">
+                           <div class="Search__Query__Wrap">
+                              <input type="text" name="q" id="q" autocomplete="off" class="Search__Query st-default-search-input yui-ac-input" disabled="">
+                           </div>
+                           <button class="Search__Submit">
+                           <i class="icon icon-search"></i>
+                           <span class="sr-only">Search</span>
+                           </button>
+                           <div id="autocomplete" class="yui-ac-container">
+                              <div class="yui-ac-content" style="display: none;">
+                                 <div class="yui-ac-hd" style="display: none;"></div>
+                                 <div class="yui-ac-bd">
+                                    <ul>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                       <li style="display: none;"></li>
+                                    </ul>
+                                 </div>
+                                 <div class="yui-ac-ft" style="display: none;"></div>
+                              </div>
+                           </div>
+                           <input type="hidden" name="sp_cs" value="UTF-8">
+                        </form>
+                     </div>
+                     <div class="Header__Main__Secondary__Navigation__Cta" activitymap.region="en_us:Header - MC">
+                        <a href="/us/en/get-started.html" class="a btn btn-primary avalara ">Get started</a>
+                     </div>
+                     <div class="Header__Main__Tablet__Navigation__Trigger">
+                        <div class="Hamburger__Icon"></div>
+                        <span class="sr-only">Menu</span>
+                     </div>
+                     <div class="Header__Main__Mobile__Phone__Trigger">
+                        <div class="Mobile__Phone__Wrap">
+                           <div class="Mobile__Phone__Number">
+                              <a href="tel:877-811-7961">877-811-7961</a>
+                           </div>
+                           <div class="Mobile__Phone__Trigger">
+                              <i class="icon icon-phone"></i>
+                              <span class="sr-only">Call</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="Header__Main__Mobile__Navigation__Trigger">
+                        <div class="Hamburger__Icon"></div>
+                        <span class="sr-only">Menu</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
