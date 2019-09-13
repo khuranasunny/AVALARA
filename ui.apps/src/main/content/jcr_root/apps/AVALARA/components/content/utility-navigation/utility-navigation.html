@@ -1,0 +1,7 @@
+<p data-sly-test="${wcmmode.edit}" data-emptytext="Utility Navigation Component" class="cq-placeholder"></p>
+<sly data-sly-use.utilityNavigation="com.aem.community.core.models.UtilityNavigation" />
+<ul class="Header__Main__Secondary__Navigation__L2 justify-content-end align-items-center" data-sly-list.links="${utilityNavigation.utilityNavigationItems}">
+   <li>
+      <a href="${links.linkPath}">${links.linkTitle}</a>     
+   </li>
+</ul>
