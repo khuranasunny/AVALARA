@@ -3,4 +3,4 @@
     jcr:description="This is the component that are used for utility navigation."
     jcr:primaryType="cq:Component"
     jcr:title="Utility Navigation"
-    componentGroup="AVALARA"/>
+    componentGroup="./hidden"/>
